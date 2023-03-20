@@ -1,0 +1,80 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = vtouch_games
+build_property.RootNamespace = vtouch_games
+build_property.ProjectDir = /home/oem/Work/Code/vtouch_games/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/oem/Work/Code/vtouch_games
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/oem/Work/Code/vtouch_games/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/oem/Work/Code/vtouch_games/Pages/Contact.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29udGFjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/oem/Work/Code/vtouch_games/Pages/Projects.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvamVjdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/oem/Work/Code/vtouch_games/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/oem/Work/Code/vtouch_games/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/oem/Work/Code/vtouch_games/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/oem/Work/Code/vtouch_games/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/oem/Work/Code/vtouch_games/Games/Balloon.razor]
+build_metadata.AdditionalFiles.TargetPath = R2FtZXMvQmFsbG9vbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-4eouuzspvz
+
+[/home/oem/Work/Code/vtouch_games/Games/Drum.razor]
+build_metadata.AdditionalFiles.TargetPath = R2FtZXMvRHJ1bS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ylhjfrotub
+
+[/home/oem/Work/Code/vtouch_games/Games/Mole.razor]
+build_metadata.AdditionalFiles.TargetPath = R2FtZXMvTW9sZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-kbakkixdqe
+
+[/home/oem/Work/Code/vtouch_games/Pages/GameMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvR2FtZU1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-uk7lsiahu6
+
+[/home/oem/Work/Code/vtouch_games/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-3uaeihmvjs
+
+[/home/oem/Work/Code/vtouch_games/Pages/VideoMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVmlkZW9NZW51LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-z3yulwf02w
+
+[/home/oem/Work/Code/vtouch_games/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/oem/Work/Code/vtouch_games/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/oem/Work/Code/vtouch_games/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

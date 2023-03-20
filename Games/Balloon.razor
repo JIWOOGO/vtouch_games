@@ -1,0 +1,63 @@
+@page "/games/balloon"
+@inject IJSRuntime JS
+
+<section class="test-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <div id="div_map" class="balloons">
+                    <div id="div_balloon" style="height:100%">
+                        <div class="w-100 text-center;" style="display:flex; justify-content:center;">                        
+                                <div id="div_start" class="start" @onclick="OnClickStart">
+                                    <button id="button_start" class="theme-btn">Start!</button>
+                                </div>                        
+                            </div>                    
+                    </div>        
+                    <div class="div_fullscreen" @onclick="OnClickFullScreen">
+                        <button id="button_fullscreen" class="btn ControlButton" style="width:150px; height:50px; font-size:20px; background-color: rgba(0, 0, 0, 0.5); color:white;">FullScreen</button>
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@code {
+    private IJSObjectReference? module;    
+    private bool IsFullScreen {get; set;}
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {            
+            IsFullScreen = false;
+            module = await JS.InvokeAsync<IJSObjectReference>("import", "./js/games/balloon.js");                            
+        }
+    }
+
+    private async Task OnClickStart()
+    {
+        
+        if (module != null)
+        {      
+            await module.InvokeVoidAsync("OnClickStart");
+        }        
+    }
+
+    private async Task OnClickFullScreen()
+    {
+        if (JS != null)
+        {      
+            if(!IsFullScreen)
+            {
+                IsFullScreen = true;
+                await JS.InvokeVoidAsync("openFullscreen", "div_map");
+            }
+            else
+            {
+                IsFullScreen = false;
+                await JS.InvokeVoidAsync("closeFullscreen");
+            }
+        }           
+    }
+}

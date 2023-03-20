@@ -1,0 +1,219 @@
+/* Standard syntax */
+:fullscreen[b-ylhjfrotub] {
+    background-color: #FFFFFF;  
+  
+}
+
+
+:fullscreen .div_fullscreen[b-ylhjfrotub]{
+    position:absolute;    
+    width:220px;
+    height:120px;
+    left:50%;
+    margin-left: -110px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:100;        
+    margin-top:-11%;
+}
+
+
+.div_fullscreen[b-ylhjfrotub]{
+    position:absolute;
+    margin-top:-6%;
+    width:220px;
+    height:120px;
+    left:50%;
+    margin-left: -110px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:100;        
+}
+
+:fullscreen .pushButtons[b-ylhjfrotub] {
+    margin-top: -2%;
+    margin-left:1%;    
+}
+
+.pushDiv[b-ylhjfrotub] {
+    /*border:1px solid black;*/
+    position: absolute;
+    border-radius: 100%;
+    z-index: 10;    
+    margin-top: -3%;
+}
+
+:fullscreen .pushDiv[b-ylhjfrotub] {
+    /*border:1px solid black;*/
+    position: absolute;
+    border-radius: 100%;            
+}
+
+#div_openhat[b-ylhjfrotub] {
+    width:14%; height:15%; top:38%; left:16%;
+}
+
+:fullscreen #div_openhat[b-ylhjfrotub] {
+    width:16%; height:17%; top:41%; left:15%;
+}
+
+#button_openhat[b-ylhjfrotub] {
+    position:absolute; width:90px; height:60px; top:39%; left:20%
+}
+
+:fullscreen #button_openhat[b-ylhjfrotub] {
+    position:absolute; width:90px; height:60px; top:45%; left:20%
+}
+
+#div_boom[b-ylhjfrotub] {
+    position:absolute; width:10%; height:20%; top:77%; left:27.5%;
+}
+
+:fullscreen #div_boom[b-ylhjfrotub] {
+    position:absolute; width:10%; height:17%; top:76%; left:27.5%;
+}
+
+#div_clap[b-ylhjfrotub] {
+    width:15%;
+    height:21%;
+    top:30%;
+    left:51%;    
+}
+
+:fullscreen #div_clap[b-ylhjfrotub] {
+    width:15%;
+    height:25%;
+    top:31%;
+    left:50%;   
+}
+
+#div_hihat[b-ylhjfrotub] {
+    width:15%;
+    height:18%;
+    top:11%;
+    left:25%;
+}
+
+:fullscreen #div_hihat[b-ylhjfrotub] {
+    width:15%;
+    height:21%;
+    top:12%;
+    left:25%;
+}
+
+#div_kick[b-ylhjfrotub] {
+    position:absolute; width:8%; height:22%; top:66%; left:46%;
+}
+
+:fullscreen #div_kick[b-ylhjfrotub] {
+    position:absolute; width:8%; height:22%; top:66%; left:46%;
+}
+
+#button_hihat[b-ylhjfrotub] {
+    position:absolute; width:80px; height:60px; top:14%; left:30%
+}
+
+
+:fullscreen #button_hihat[b-ylhjfrotub] {
+    position:absolute; width:80px; height:60px; top:19%; left:30%
+}
+
+
+
+#button_clap[b-ylhjfrotub] {
+    position:absolute; width:60px; height:60px; top:33%; left:56%
+}
+
+:fullscreen #button_clap[b-ylhjfrotub] {
+    position:absolute; width:60px; height:60px; top:40%; left:55%
+}
+
+#div_ride[b-ylhjfrotub] {
+    width:14%;
+    height:21%;
+    top:35%;
+    left:66%;
+}
+
+:fullscreen #div_ride[b-ylhjfrotub] {
+    width:14%;
+    height:24%;
+    top:38%;
+    left:66%;
+}
+
+#button_ride[b-ylhjfrotub] {
+    position:absolute; width:60px; height:60px; top:38%; left:71%
+}
+
+:fullscreen #button_ride[b-ylhjfrotub] {
+    position:absolute; width:60px; height:60px; top:45%; left:71%
+}
+
+#div_snare[b-ylhjfrotub] {
+    width:15%;
+    height:17%;
+    top:56%;
+    left:30%;
+}
+
+:fullscreen #div_snare[b-ylhjfrotub] {
+    width:15%;
+    height:22%;
+    top:59%;
+    left:30%;
+}
+
+#button_snare[b-ylhjfrotub] {
+    position:absolute; width:70px; height:60px; top:57%; left:35%
+}
+
+:fullscreen #button_snare[b-ylhjfrotub] {
+    position:absolute; width:70px; height:60px; top:66%; left:35%
+}
+
+#div_tink[b-ylhjfrotub] {
+    width:15%;
+    height:19%;
+    top:56%;
+    left:57%;
+}
+
+:fullscreen #div_tink[b-ylhjfrotub] {
+    width:15%;
+    height:22%;
+    top:60%;
+    left:57%;
+}
+
+#button_tink[b-ylhjfrotub] {
+    position:absolute; width:60px; height:60px; top:57%; left:63%
+}
+
+:fullscreen #button_tink[b-ylhjfrotub] {
+    position:absolute; width:60px; height:60px; top:66%; left:62%
+}
+
+#div_tom[b-ylhjfrotub] {
+    width:10.5%;
+    height:15%;
+    top:33%;
+    left:35.5%;
+}
+
+:fullscreen #div_tom[b-ylhjfrotub] {
+    width:12%;
+    height:17%;
+    top:35%;
+    left:35%;
+}
+
+#button_tom[b-ylhjfrotub] {
+    position:absolute; width:70px; height:60px; top:33%; left:38%
+}
+
+:fullscreen #button_tom[b-ylhjfrotub] {
+    position:absolute; width:70px; height:60px; top:39%; left:38%
+}

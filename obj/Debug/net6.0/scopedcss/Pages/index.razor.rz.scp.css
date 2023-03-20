@@ -1,0 +1,180 @@
+#button_close:hover[b-3uaeihmvjs]
+{
+    color: black;
+}
+
+.vertical-arrow[b-3uaeihmvjs] {
+    color:#808080;
+    font-size:80px
+}
+.vertical-arrow:hover[b-3uaeihmvjs] {
+    color:black;
+}
+
+
+.video-control-prev[b-3uaeihmvjs]{
+    background-color: #ffffff;
+    width: 22vh;
+    height: 22vh;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    border:none;   
+    margin-top:100px; 
+    margin-left: -17%;
+}
+
+.video-control-next[b-3uaeihmvjs] {
+    background-color: #ffffff;
+    width: 22vh;
+    height: 22vh;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    border:none;    
+    margin-top:100px; 
+    margin-right: -17%;
+}
+
+.video-controls-pre[b-3uaeihmvjs],
+.video-controls-next[b-3uaeihmvjs] {
+    position:absolute;
+    width:25%;
+    height:90%; 
+    
+    display:flex;
+    align-items:center;
+    justify-content:center
+}
+
+.video-controls-play[b-3uaeihmvjs] {
+    position:absolute;
+    width:50%;
+    height:90%; 
+    
+    display:flex;
+    align-items:center;
+    justify-content:center
+}
+
+.carousel-control-prev[b-3uaeihmvjs] {
+    background-color: #ffffff;
+    width: 22vh;
+    height: 22vh;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    border:none;
+    margin-left: -20%;
+}
+
+.carousel-control-next[b-3uaeihmvjs] {
+    background-color: #ffffff;
+    width: 22vh;
+    height: 22vh;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    border:none;
+    margin-right: -20%;
+}
+
+.modal-active[b-3uaeihmvjs],
+.modal-active[b-3uaeihmvjs] {
+  overflow: hidden;
+}
+#modal-container[b-3uaeihmvjs] {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: table;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    /* hidden 처리 */
+    transform: scale(0);
+}
+#modal-container .modal-background[b-3uaeihmvjs] {
+    display: table-cell;
+    background: rgba(0, 0, 0, .8);
+    text-align: center;
+    vertical-align: middle;
+}
+#modal-container .modal-background .modal[b-3uaeihmvjs] {
+    background: #fff;
+    padding: 50px;
+    display: inline-block;
+    border-radius: 3px;
+    position: relative;
+}
+
+/*
+ * ------------------------------
+ * Unfolding Animation
+ * ------------------------------
+ */
+ #modal-container.one[b-3uaeihmvjs] {
+	/*transform: scaleX(0) scaleY(1);*/
+	animation: unfoldIn-b-3uaeihmvjs 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.one .modal-background .modal[b-3uaeihmvjs] {
+	/* 초기 display: none 처럼 크기를 0 으로 하여 보여주지 않음*/
+	transform: scale(0);
+	/* 0.5 초 동안 애니메이션을 실행, 단 0.8초 지연시켜 0.8초 후에 애니메이션을 실행 */
+	animation: zoomIn-b-3uaeihmvjs .5s .8s  cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.one.out[b-3uaeihmvjs] {
+	transform: scale(1);
+	animation: unfoldOut-b-3uaeihmvjs 1s .3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.one.out .modal-background .modal[b-3uaeihmvjs] {
+	animation: zoomOut-b-3uaeihmvjs 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+/* Dimmed showing */
+@keyframes unfoldIn-b-3uaeihmvjs {
+	0% {
+		transform: scaleX(0) scaleY(0.005);
+	}
+	50% {
+		/* 0.5 초간 세로 크기는 작은상태로 가로 너비만 확대  */
+		transform: scaleX(1) scaleY(0.005);
+	}
+	100% {
+		/* 0.5 초간 세로 크기를 확대 */
+		transform: scaleY(1) scaleX(1);
+	}
+}
+/* Show modal content  */
+@keyframes zoomIn-b-3uaeihmvjs {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+/* Hide modal content */
+@keyframes zoomOut-b-3uaeihmvjs {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(0);
+	}
+}
+/* Dimmed hiding */
+@keyframes unfoldOut-b-3uaeihmvjs {
+	0% {
+		transform: scale(1)
+	}
+	50% {
+		transform: scaleX(1) scaleY(0.005);
+	}
+	100% {
+		transform: scaleX(0) scaleY(0.005);
+	}
+}
+
+:fullscreen .ControlButton[b-3uaeihmvjs]{
+    margin-top:-5%;    
+}

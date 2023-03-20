@@ -1,0 +1,87 @@
+@page "/games/drum"
+@inject IJSRuntime JS
+
+<section class="test-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12">                
+                <div id="div_map" style="width:100%; position:relative;">                    
+                    <div class="w-100 text-center">
+                        <img src="images/games/drum/bg-drum.png" style="width:70%;" />                                                                                         
+                    </div>       
+                    <div>                        
+                        <div id="div_clap"  class="pushDiv" @onmouseover="@(e=>OnClickDrum("clap"))"></div>
+                        <button id="button_clap" class="btn btn-primary pushButtons">clap</button>
+
+                        <div id="div_hihat" class="pushDiv" @onmouseover="@(e=>OnClickDrum("hihat"))"></div>
+                        <button id="button_hihat" class="btn btn-primary pushButtons">hihat</button>
+
+                        <div id="div_kick" @onmouseover="@(e=>OnClickDrum("kick"))"></div>
+                        <button style="position:absolute; width:60px; height:60px; top:78%; left:47%" class="btn btn-primary pushButtons">kick</button>
+
+                        <div id="div_openhat" class="pushDiv" @onmouseover="@(e=>OnClickDrum("openhat"))"></div>
+                        <button id="button_openhat" class="btn btn-primary pushButtons" >openhat</button>
+
+                        <div id="div_boom" @onmouseover="@(e=>OnClickDrum("boom"))"></div>
+                        <button style="position:absolute; width:70px; height:60px; top:85%; left:30%" class="btn btn-primary pushButtons">boom</button>
+
+                        <div id="div_ride" class="pushDiv" @onmouseover="@(e=>OnClickDrum("ride"))"></div>
+                        <button id="button_ride" class="btn btn-primary pushButtons">ride</button>
+
+                        <div id="div_snare" class="pushDiv" @onmouseover="@(e=>OnClickDrum("snare"))"></div>
+                        <button id="button_snare" class="btn btn-primary pushButtons">snare</button>
+
+                        <div id="div_tom" class="pushDiv" @onmouseover="@(e=>OnClickDrum("tom"))"></div>
+                        <button id="button_tom" class="btn btn-primary pushButtons">tom</button>
+
+                        <div id="div_tink" class="pushDiv" @onmouseover="@(e=>OnClickDrum("tink"))"></div>
+                        <button id="button_tink" class="btn btn-primary pushButtons">tink</button>
+                        
+                    </div>
+                    <div class="div_fullscreen" @onclick="OnClickFullScreen">
+                        <button id="button_fullscreen" class="btn" style="width:150px; height:50px; font-size:20px; background-color: rgba(0, 0, 0, 0.5); color:white;">FullScreen</button>
+                    </div> 
+                </div>                
+            </div>
+        </div>
+    </div>
+</section>
+
+@code {
+    private IJSObjectReference? module;
+     private bool IsFullScreen {get; set;}
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {            
+            module = await JS.InvokeAsync<IJSObjectReference>("import", "./js/games/drum.js");                            
+        }
+    }
+    private async Task OnClickDrum(string type)
+    {
+        
+        if (module != null)
+        {      
+            await module.InvokeVoidAsync("playSound", type);
+        }        
+    }
+
+    private async Task OnClickFullScreen()
+    {
+        if (JS != null)
+        {      
+            if(!IsFullScreen)
+            {
+                IsFullScreen = true;
+                await JS.InvokeVoidAsync("openFullscreen", "div_map");
+            }
+            else
+            {
+                IsFullScreen = false;
+                await JS.InvokeVoidAsync("closeFullscreen");
+            }
+        }          
+    }
+
+}

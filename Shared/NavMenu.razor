@@ -1,0 +1,70 @@
+﻿@inject NavigationManager navManager;
+
+<!-- ========================= header start ========================= -->
+<header class="header navbar-area">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-10 offset-1">
+
+                <!-- Image and text -->
+                <table class="w-100 text-center" style="height:150px; z-index:999;">
+                    <tr>
+                        <td style="width:25%; cursor:pointer;" @onclick="OnClickToggleNav">
+                            <label class="menu-open-button">
+                                <img src="images/vtouch.png" style="width:150px; height:40px;">
+                            </label>
+                        </td>
+                        <td style="width:25%; cursor:pointer;">
+                            <div class="@((toggleNav)? "td-menu" : "transparent")" @onclick="@(e=>OnClickNavGame(""))">
+                                <h4>HOME</h4>
+                            </div>
+                        </td>                     
+                        <td style="width:25%; cursor:pointer">
+                            <div class="@((toggleNav)? "td-menu" : "transparent")" @onclick="@(e=>OnClickNavGame("games"))">
+                                <h4>GAMES</h4>
+                            </div>
+                        </td>
+                        <td style="width:25%; cursor:pointer">
+                            <div class="@((toggleNav)? "td-menu" : "transparent")" @onclick="@(e=>OnClickNavGame("videos"))">
+                                <h4>VIDEOS</h4>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+
+</header>
+<!-- ========================= header end ========================= -->
+
+@code {
+    private bool toggleNav {get; set;}
+    private void OnClickNavGame(string? navId)
+    {
+        if(navId != null)
+            navManager.NavigateTo("/" + navId, true);
+        else
+            navManager.NavigateTo("/", true);
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {        
+        if (firstRender)
+        {   
+            toggleNav = false;
+        }
+    }
+
+    protected void OnClickToggleNav()
+    {        
+        if(toggleNav == false)
+            toggleNav = true;
+        else
+            toggleNav = false;
+
+            StateHasChanged();
+    }
+
+}

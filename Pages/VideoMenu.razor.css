@@ -1,0 +1,273 @@
+.carousel-vertical {    
+    position: relative;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.carousel__scene {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 95vw;    
+    perspective: 100px;    
+    padding-top:20px;
+    /*overflow: hidden;*/
+}
+
+.carousel__list {
+    width: 100%;
+    height: 330px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    transform: translateZ(-288px);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    list-style: none;
+    counter-reset: list-counter;
+}
+
+.carousel__cell {
+    position: absolute;
+    width: 95%;
+    height: 310px;
+    max-width: calc(95vw - 20px);
+    
+    top: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    transition: transform 1s, opacity 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    counter-increment: list-counter;
+    background-color: rgba(180, 180, 180, 0.75);
+    /*filter: blur(2px);*/
+}
+
+
+.carousel__cell:nth-child(1) { transform: rotateX(  0deg) translateZ(288px); }
+.carousel__cell:nth-child(2) { transform: rotateX( 40deg) translateZ(288px); }
+.carousel__cell:nth-child(3) { transform: rotateX( 80deg) translateZ(288px); }
+.carousel__cell:nth-child(4) { transform: rotateX(120deg) translateZ(288px); }
+.carousel__cell:nth-child(5) { transform: rotateX(160deg) translateZ(288px); }
+.carousel__cell:nth-child(6) { transform: rotateX(200deg) translateZ(288px); }
+.carousel__cell:nth-child(7) { transform: rotateX(240deg) translateZ(288px); }
+.carousel__cell:nth-child(8) { transform: rotateX(280deg) translateZ(288px); }
+.carousel__cell:nth-child(9) { transform: rotateX(320deg) translateZ(288px); }
+
+
+.carousel-inner {
+    padding: 1em;
+}
+  
+.video-control-prev{
+    background-color: #ffffff;
+    width: 22vh;
+    height: 22vh;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    border:none;   
+    margin-top:100px; 
+   
+}
+
+.video-control-next {
+    background-color: #ffffff;
+    width: 22vh;
+    height: 22vh;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    border:none;    
+    margin-top:100px; 
+    
+}
+
+.video-controls-pre,
+.video-controls-next {
+    position:absolute;
+    width:25%;
+    height:90%; 
+    
+    display:flex;
+    align-items:center;
+    justify-content:center
+}
+
+.video-controls-play {
+    position:absolute;
+    width:50%;
+    height:90%; 
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+
+.carousel-control-prev {
+    background-color: #ffffff;
+    width: 22vh;
+    height: 22vh;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    border:none;
+    margin-left: -24%;
+}
+
+.carousel-control-next {
+    background-color: #ffffff;
+    width: 22vh;
+    height: 22vh;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    border:none;
+    margin-right: -24%;
+}
+
+.carousel-vertical-prev,
+.carousel-vertical-next  {
+    background-color: #ffffff;
+    width: 22vh;
+    height: 22vh;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: rotate(90deg);    
+    border:none;    
+}
+
+#button_close:hover
+{
+    color: black;
+}
+
+.vertical-arrow {
+    color:#808080;
+    font-size:80px
+}
+.vertical-arrow:hover {
+    color:black;
+}
+
+
+  @media (min-width: 768px) {
+    .carousel-item {
+      margin-right: 10px;
+      flex: 0 0 33.333333%;
+      display: block;
+    }
+    .carousel-inner {
+      display: flex;
+    }
+}
+
+.modal-active,
+.modal-active {
+  overflow: hidden;
+}
+#modal-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: table;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    /* hidden 처리 */
+    transform: scale(0);
+}
+#modal-container .modal-background {
+    display: table-cell;
+    background: rgba(0, 0, 0, .8);
+    text-align: center;
+    vertical-align: middle;
+}
+#modal-container .modal-background .modal {
+    background: #fff;
+    padding: 50px;
+    display: inline-block;
+    border-radius: 3px;
+    position: relative;
+}
+
+/*
+ * ------------------------------
+ * Unfolding Animation
+ * ------------------------------
+ */
+ #modal-container.one {
+	/*transform: scaleX(0) scaleY(1);*/
+	animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    z-index:999;
+}
+#modal-container.one .modal-background .modal {
+	/* 초기 display: none 처럼 크기를 0 으로 하여 보여주지 않음*/
+	transform: scale(0);
+	/* 0.5 초 동안 애니메이션을 실행, 단 0.8초 지연시켜 0.8초 후에 애니메이션을 실행 */
+	animation: zoomIn .5s .8s  cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.one.out {
+	transform: scale(1);
+	animation: unfoldOut 1s .3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.one.out .modal-background .modal {
+	animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+/* Dimmed showing */
+@keyframes unfoldIn {
+	0% {
+		transform: scaleX(0) scaleY(0.005);
+	}
+	50% {
+		/* 0.5 초간 세로 크기는 작은상태로 가로 너비만 확대  */
+		transform: scaleX(1) scaleY(0.005);
+	}
+	100% {
+		/* 0.5 초간 세로 크기를 확대 */
+		transform: scaleY(1) scaleX(1);
+	}
+}
+/* Show modal content  */
+@keyframes zoomIn {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+/* Hide modal content */
+@keyframes zoomOut {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(0);
+	}
+}
+/* Dimmed hiding */
+@keyframes unfoldOut {
+	0% {
+		transform: scale(1)
+	}
+	50% {
+		transform: scaleX(1) scaleY(0.005);
+	}
+	100% {
+		transform: scaleX(0) scaleY(0.005);
+	}
+}
+
+:fullscreen .ControlButton{
+    margin-top:-5%;    
+}

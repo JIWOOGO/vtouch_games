@@ -1,0 +1,871 @@
+/* _content/vtouch_games/Games/Balloon.razor.rz.scp.css */
+.balloons[b-4eouuzspvz]{
+    width:100%;
+    height:800px;            
+    position:relative;
+    background-image: url('/images/games/balloons/bg-balloon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+
+
+:fullscreen .div_fullscreen[b-4eouuzspvz]{
+    position:absolute;
+    
+    width:220px;
+    height:120px;
+    left:50%;
+    margin-left: -110px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:100;    
+}
+
+.div_fullscreen[b-4eouuzspvz]{
+    position:absolute;
+    margin-top:-6%;
+    width:220px;
+    height:120px;
+    left:50%;
+    margin-left: -110px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:100;    
+}
+
+.start[b-4eouuzspvz]{
+    padding:50px;
+    display:flex;
+    justify-content:center;
+    width:300px;
+    height:160px;
+    z-index:10;
+}
+/* _content/vtouch_games/Games/Drum.razor.rz.scp.css */
+/* Standard syntax */
+:fullscreen[b-ylhjfrotub] {
+    background-color: #FFFFFF;  
+  
+}
+
+
+:fullscreen .div_fullscreen[b-ylhjfrotub]{
+    position:absolute;    
+    width:220px;
+    height:120px;
+    left:50%;
+    margin-left: -110px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:100;        
+    margin-top:-11%;
+}
+
+
+.div_fullscreen[b-ylhjfrotub]{
+    position:absolute;
+    margin-top:-6%;
+    width:220px;
+    height:120px;
+    left:50%;
+    margin-left: -110px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:100;        
+}
+
+:fullscreen .pushButtons[b-ylhjfrotub] {
+    margin-top: -2%;
+    margin-left:1%;    
+}
+
+.pushDiv[b-ylhjfrotub] {
+    /*border:1px solid black;*/
+    position: absolute;
+    border-radius: 100%;
+    z-index: 10;    
+    margin-top: -3%;
+}
+
+:fullscreen .pushDiv[b-ylhjfrotub] {
+    /*border:1px solid black;*/
+    position: absolute;
+    border-radius: 100%;            
+}
+
+#div_openhat[b-ylhjfrotub] {
+    width:14%; height:15%; top:38%; left:16%;
+}
+
+:fullscreen #div_openhat[b-ylhjfrotub] {
+    width:16%; height:17%; top:41%; left:15%;
+}
+
+#button_openhat[b-ylhjfrotub] {
+    position:absolute; width:90px; height:60px; top:39%; left:20%
+}
+
+:fullscreen #button_openhat[b-ylhjfrotub] {
+    position:absolute; width:90px; height:60px; top:45%; left:20%
+}
+
+#div_boom[b-ylhjfrotub] {
+    position:absolute; width:10%; height:20%; top:77%; left:27.5%;
+}
+
+:fullscreen #div_boom[b-ylhjfrotub] {
+    position:absolute; width:10%; height:17%; top:76%; left:27.5%;
+}
+
+#div_clap[b-ylhjfrotub] {
+    width:15%;
+    height:21%;
+    top:30%;
+    left:51%;    
+}
+
+:fullscreen #div_clap[b-ylhjfrotub] {
+    width:15%;
+    height:25%;
+    top:31%;
+    left:50%;   
+}
+
+#div_hihat[b-ylhjfrotub] {
+    width:15%;
+    height:18%;
+    top:11%;
+    left:25%;
+}
+
+:fullscreen #div_hihat[b-ylhjfrotub] {
+    width:15%;
+    height:21%;
+    top:12%;
+    left:25%;
+}
+
+#div_kick[b-ylhjfrotub] {
+    position:absolute; width:8%; height:22%; top:66%; left:46%;
+}
+
+:fullscreen #div_kick[b-ylhjfrotub] {
+    position:absolute; width:8%; height:22%; top:66%; left:46%;
+}
+
+#button_hihat[b-ylhjfrotub] {
+    position:absolute; width:80px; height:60px; top:14%; left:30%
+}
+
+
+:fullscreen #button_hihat[b-ylhjfrotub] {
+    position:absolute; width:80px; height:60px; top:19%; left:30%
+}
+
+
+
+#button_clap[b-ylhjfrotub] {
+    position:absolute; width:60px; height:60px; top:33%; left:56%
+}
+
+:fullscreen #button_clap[b-ylhjfrotub] {
+    position:absolute; width:60px; height:60px; top:40%; left:55%
+}
+
+#div_ride[b-ylhjfrotub] {
+    width:14%;
+    height:21%;
+    top:35%;
+    left:66%;
+}
+
+:fullscreen #div_ride[b-ylhjfrotub] {
+    width:14%;
+    height:24%;
+    top:38%;
+    left:66%;
+}
+
+#button_ride[b-ylhjfrotub] {
+    position:absolute; width:60px; height:60px; top:38%; left:71%
+}
+
+:fullscreen #button_ride[b-ylhjfrotub] {
+    position:absolute; width:60px; height:60px; top:45%; left:71%
+}
+
+#div_snare[b-ylhjfrotub] {
+    width:15%;
+    height:17%;
+    top:56%;
+    left:30%;
+}
+
+:fullscreen #div_snare[b-ylhjfrotub] {
+    width:15%;
+    height:22%;
+    top:59%;
+    left:30%;
+}
+
+#button_snare[b-ylhjfrotub] {
+    position:absolute; width:70px; height:60px; top:57%; left:35%
+}
+
+:fullscreen #button_snare[b-ylhjfrotub] {
+    position:absolute; width:70px; height:60px; top:66%; left:35%
+}
+
+#div_tink[b-ylhjfrotub] {
+    width:15%;
+    height:19%;
+    top:56%;
+    left:57%;
+}
+
+:fullscreen #div_tink[b-ylhjfrotub] {
+    width:15%;
+    height:22%;
+    top:60%;
+    left:57%;
+}
+
+#button_tink[b-ylhjfrotub] {
+    position:absolute; width:60px; height:60px; top:57%; left:63%
+}
+
+:fullscreen #button_tink[b-ylhjfrotub] {
+    position:absolute; width:60px; height:60px; top:66%; left:62%
+}
+
+#div_tom[b-ylhjfrotub] {
+    width:10.5%;
+    height:15%;
+    top:33%;
+    left:35.5%;
+}
+
+:fullscreen #div_tom[b-ylhjfrotub] {
+    width:12%;
+    height:17%;
+    top:35%;
+    left:35%;
+}
+
+#button_tom[b-ylhjfrotub] {
+    position:absolute; width:70px; height:60px; top:33%; left:38%
+}
+
+:fullscreen #button_tom[b-ylhjfrotub] {
+    position:absolute; width:70px; height:60px; top:39%; left:38%
+}
+/* _content/vtouch_games/Games/Mole.razor.rz.scp.css */
+.mole-main[b-kbakkixdqe] {
+    box-sizing: border-box;
+    font-size: 10px;
+    background-image: url('/images/games/mole/bg-mole.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+  
+  *[b-kbakkixdqe], *[b-kbakkixdqe]:before, *[b-kbakkixdqe]:after {
+    box-sizing: inherit;
+  }
+  
+.mole-body[b-kbakkixdqe] {
+    padding: 0;
+    margin: 0;    
+}
+  
+.start[b-kbakkixdqe]{
+    padding:30px;
+    display:flex;
+    justify-content:center;
+    width:300px;
+    height:120px;
+    z-index:10;
+}
+  
+h2[b-kbakkixdqe] {
+    padding-top:10px;
+    text-align: center;
+    font-size: 3rem;    
+}
+  
+.score[b-kbakkixdqe] {
+    color: rgb(104, 94, 114);
+    margin-top: 0%;
+  
+ }
+  
+.game[b-kbakkixdqe] {
+    width: 100%;
+    height: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom:70px;  
+    margin-top: -30px;
+}
+  
+.hole[b-kbakkixdqe] {
+    flex: 1 0 33.33%;
+    overflow: hidden;
+    position: relative;  
+}
+  
+.hole[b-kbakkixdqe]:after {
+    display: block;
+    background: url('/images/games/mole/dirt.svg') bottom center no-repeat;
+    background-size: contain;
+    content: '';
+    width: 100%;
+    height:70px;
+    position: absolute;
+    z-index: 2;
+    bottom: -30px;
+}
+  
+.mole[b-kbakkixdqe] {
+    background: url('/images/games/mole/mole.svg') bottom center no-repeat;
+    background-size: 30%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition:all 0.5s ease;
+}
+  
+  .hole.up .mole[b-kbakkixdqe] {
+    top: 0;
+}  
+
+:fullscreen .hole[b-kbakkixdqe] {
+    flex: 1 0 33.33%;
+    overflow: hidden;
+    position: relative;    
+    height: 250px;
+}
+
+:fullscreen .div_fullscreen[b-kbakkixdqe]{
+    position:absolute;
+    margin-top:7%;
+    width:220px;
+    height:120px;
+    left:50%;
+    margin-left: -110px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:100;    
+}
+
+.div_fullscreen[b-kbakkixdqe]{
+    position:absolute;
+    margin-top:-4.5%;
+    width:220px;
+    height:120px;
+    left:50%;
+    margin-left: -110px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:100;    
+}
+/* _content/vtouch_games/Pages/GameMenu.razor.rz.scp.css */
+.carousel-inner[b-uk7lsiahu6] {
+  padding: 1em;
+}
+
+
+.carousel-control-prev[b-uk7lsiahu6] {
+  background-color: #e1e1e1;
+  width: 13vh;
+  height: 13vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  border:none;
+  margin-left: -170px;
+}
+
+.carousel-control-next[b-uk7lsiahu6] {
+  background-color: #e1e1e1;
+  width: 13vh;
+  height: 13vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  border:none;
+  margin-right: -50px;
+}
+
+@media (min-width: 768px) {
+  .carousel-item[b-uk7lsiahu6] {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+  .carousel-inner[b-uk7lsiahu6] {
+    display: flex;
+  }
+}
+/* _content/vtouch_games/Pages/index.razor.rz.scp.css */
+#button_close:hover[b-3uaeihmvjs]
+{
+    color: black;
+}
+
+.vertical-arrow[b-3uaeihmvjs] {
+    color:#808080;
+    font-size:80px
+}
+.vertical-arrow:hover[b-3uaeihmvjs] {
+    color:black;
+}
+
+
+.video-control-prev[b-3uaeihmvjs]{
+    background-color: #ffffff;
+    width: 22vh;
+    height: 22vh;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    border:none;   
+    margin-top:100px; 
+    margin-left: -17%;
+}
+
+.video-control-next[b-3uaeihmvjs] {
+    background-color: #ffffff;
+    width: 22vh;
+    height: 22vh;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    border:none;    
+    margin-top:100px; 
+    margin-right: -17%;
+}
+
+.video-controls-pre[b-3uaeihmvjs],
+.video-controls-next[b-3uaeihmvjs] {
+    position:absolute;
+    width:25%;
+    height:90%; 
+    
+    display:flex;
+    align-items:center;
+    justify-content:center
+}
+
+.video-controls-play[b-3uaeihmvjs] {
+    position:absolute;
+    width:50%;
+    height:90%; 
+    
+    display:flex;
+    align-items:center;
+    justify-content:center
+}
+
+.carousel-control-prev[b-3uaeihmvjs] {
+    background-color: #ffffff;
+    width: 22vh;
+    height: 22vh;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    border:none;
+    margin-left: -20%;
+}
+
+.carousel-control-next[b-3uaeihmvjs] {
+    background-color: #ffffff;
+    width: 22vh;
+    height: 22vh;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    border:none;
+    margin-right: -20%;
+}
+
+.modal-active[b-3uaeihmvjs],
+.modal-active[b-3uaeihmvjs] {
+  overflow: hidden;
+}
+#modal-container[b-3uaeihmvjs] {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: table;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    /* hidden 처리 */
+    transform: scale(0);
+}
+#modal-container .modal-background[b-3uaeihmvjs] {
+    display: table-cell;
+    background: rgba(0, 0, 0, .8);
+    text-align: center;
+    vertical-align: middle;
+}
+#modal-container .modal-background .modal[b-3uaeihmvjs] {
+    background: #fff;
+    padding: 50px;
+    display: inline-block;
+    border-radius: 3px;
+    position: relative;
+}
+
+/*
+ * ------------------------------
+ * Unfolding Animation
+ * ------------------------------
+ */
+ #modal-container.one[b-3uaeihmvjs] {
+	/*transform: scaleX(0) scaleY(1);*/
+	animation: unfoldIn-b-3uaeihmvjs 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.one .modal-background .modal[b-3uaeihmvjs] {
+	/* 초기 display: none 처럼 크기를 0 으로 하여 보여주지 않음*/
+	transform: scale(0);
+	/* 0.5 초 동안 애니메이션을 실행, 단 0.8초 지연시켜 0.8초 후에 애니메이션을 실행 */
+	animation: zoomIn-b-3uaeihmvjs .5s .8s  cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.one.out[b-3uaeihmvjs] {
+	transform: scale(1);
+	animation: unfoldOut-b-3uaeihmvjs 1s .3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.one.out .modal-background .modal[b-3uaeihmvjs] {
+	animation: zoomOut-b-3uaeihmvjs 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+/* Dimmed showing */
+@keyframes unfoldIn-b-3uaeihmvjs {
+	0% {
+		transform: scaleX(0) scaleY(0.005);
+	}
+	50% {
+		/* 0.5 초간 세로 크기는 작은상태로 가로 너비만 확대  */
+		transform: scaleX(1) scaleY(0.005);
+	}
+	100% {
+		/* 0.5 초간 세로 크기를 확대 */
+		transform: scaleY(1) scaleX(1);
+	}
+}
+/* Show modal content  */
+@keyframes zoomIn-b-3uaeihmvjs {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+/* Hide modal content */
+@keyframes zoomOut-b-3uaeihmvjs {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(0);
+	}
+}
+/* Dimmed hiding */
+@keyframes unfoldOut-b-3uaeihmvjs {
+	0% {
+		transform: scale(1)
+	}
+	50% {
+		transform: scaleX(1) scaleY(0.005);
+	}
+	100% {
+		transform: scaleX(0) scaleY(0.005);
+	}
+}
+
+:fullscreen .ControlButton[b-3uaeihmvjs]{
+    margin-top:-5%;    
+}
+/* _content/vtouch_games/Pages/VideoMenu.razor.rz.scp.css */
+.carousel-vertical[b-z3yulwf02w] {    
+    position: relative;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.carousel__scene[b-z3yulwf02w] {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 95vw;    
+    perspective: 100px;    
+    padding-top:20px;
+    /*overflow: hidden;*/
+}
+
+.carousel__list[b-z3yulwf02w] {
+    width: 100%;
+    height: 330px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    transform: translateZ(-288px);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    list-style: none;
+    counter-reset: list-counter;
+}
+
+.carousel__cell[b-z3yulwf02w] {
+    position: absolute;
+    width: 95%;
+    height: 310px;
+    max-width: calc(95vw - 20px);
+    
+    top: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    transition: transform 1s, opacity 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    counter-increment: list-counter;
+    background-color: rgba(180, 180, 180, 0.75);
+    /*filter: blur(2px);*/
+}
+
+
+.carousel__cell:nth-child(1)[b-z3yulwf02w] { transform: rotateX(  0deg) translateZ(288px); }
+.carousel__cell:nth-child(2)[b-z3yulwf02w] { transform: rotateX( 40deg) translateZ(288px); }
+.carousel__cell:nth-child(3)[b-z3yulwf02w] { transform: rotateX( 80deg) translateZ(288px); }
+.carousel__cell:nth-child(4)[b-z3yulwf02w] { transform: rotateX(120deg) translateZ(288px); }
+.carousel__cell:nth-child(5)[b-z3yulwf02w] { transform: rotateX(160deg) translateZ(288px); }
+.carousel__cell:nth-child(6)[b-z3yulwf02w] { transform: rotateX(200deg) translateZ(288px); }
+.carousel__cell:nth-child(7)[b-z3yulwf02w] { transform: rotateX(240deg) translateZ(288px); }
+.carousel__cell:nth-child(8)[b-z3yulwf02w] { transform: rotateX(280deg) translateZ(288px); }
+.carousel__cell:nth-child(9)[b-z3yulwf02w] { transform: rotateX(320deg) translateZ(288px); }
+
+
+.carousel-inner[b-z3yulwf02w] {
+    padding: 1em;
+}
+  
+.video-control-prev[b-z3yulwf02w]{
+    background-color: #ffffff;
+    width: 22vh;
+    height: 22vh;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    border:none;   
+    margin-top:100px; 
+   
+}
+
+.video-control-next[b-z3yulwf02w] {
+    background-color: #ffffff;
+    width: 22vh;
+    height: 22vh;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    border:none;    
+    margin-top:100px; 
+    
+}
+
+.video-controls-pre[b-z3yulwf02w],
+.video-controls-next[b-z3yulwf02w] {
+    position:absolute;
+    width:25%;
+    height:90%; 
+    
+    display:flex;
+    align-items:center;
+    justify-content:center
+}
+
+.video-controls-play[b-z3yulwf02w] {
+    position:absolute;
+    width:50%;
+    height:90%; 
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+
+.carousel-control-prev[b-z3yulwf02w] {
+    background-color: #ffffff;
+    width: 22vh;
+    height: 22vh;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    border:none;
+    margin-left: -24%;
+}
+
+.carousel-control-next[b-z3yulwf02w] {
+    background-color: #ffffff;
+    width: 22vh;
+    height: 22vh;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    border:none;
+    margin-right: -24%;
+}
+
+.carousel-vertical-prev[b-z3yulwf02w],
+.carousel-vertical-next[b-z3yulwf02w]  {
+    background-color: #ffffff;
+    width: 22vh;
+    height: 22vh;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: rotate(90deg);    
+    border:none;    
+}
+
+#button_close:hover[b-z3yulwf02w]
+{
+    color: black;
+}
+
+.vertical-arrow[b-z3yulwf02w] {
+    color:#808080;
+    font-size:80px
+}
+.vertical-arrow:hover[b-z3yulwf02w] {
+    color:black;
+}
+
+
+  @media (min-width: 768px) {
+    .carousel-item[b-z3yulwf02w] {
+      margin-right: 10px;
+      flex: 0 0 33.333333%;
+      display: block;
+    }
+    .carousel-inner[b-z3yulwf02w] {
+      display: flex;
+    }
+}
+
+.modal-active[b-z3yulwf02w],
+.modal-active[b-z3yulwf02w] {
+  overflow: hidden;
+}
+#modal-container[b-z3yulwf02w] {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: table;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    /* hidden 처리 */
+    transform: scale(0);
+}
+#modal-container .modal-background[b-z3yulwf02w] {
+    display: table-cell;
+    background: rgba(0, 0, 0, .8);
+    text-align: center;
+    vertical-align: middle;
+}
+#modal-container .modal-background .modal[b-z3yulwf02w] {
+    background: #fff;
+    padding: 50px;
+    display: inline-block;
+    border-radius: 3px;
+    position: relative;
+}
+
+/*
+ * ------------------------------
+ * Unfolding Animation
+ * ------------------------------
+ */
+ #modal-container.one[b-z3yulwf02w] {
+	/*transform: scaleX(0) scaleY(1);*/
+	animation: unfoldIn-b-z3yulwf02w 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    z-index:999;
+}
+#modal-container.one .modal-background .modal[b-z3yulwf02w] {
+	/* 초기 display: none 처럼 크기를 0 으로 하여 보여주지 않음*/
+	transform: scale(0);
+	/* 0.5 초 동안 애니메이션을 실행, 단 0.8초 지연시켜 0.8초 후에 애니메이션을 실행 */
+	animation: zoomIn-b-z3yulwf02w .5s .8s  cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.one.out[b-z3yulwf02w] {
+	transform: scale(1);
+	animation: unfoldOut-b-z3yulwf02w 1s .3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.one.out .modal-background .modal[b-z3yulwf02w] {
+	animation: zoomOut-b-z3yulwf02w 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+/* Dimmed showing */
+@keyframes unfoldIn-b-z3yulwf02w {
+	0% {
+		transform: scaleX(0) scaleY(0.005);
+	}
+	50% {
+		/* 0.5 초간 세로 크기는 작은상태로 가로 너비만 확대  */
+		transform: scaleX(1) scaleY(0.005);
+	}
+	100% {
+		/* 0.5 초간 세로 크기를 확대 */
+		transform: scaleY(1) scaleX(1);
+	}
+}
+/* Show modal content  */
+@keyframes zoomIn-b-z3yulwf02w {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+/* Hide modal content */
+@keyframes zoomOut-b-z3yulwf02w {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(0);
+	}
+}
+/* Dimmed hiding */
+@keyframes unfoldOut-b-z3yulwf02w {
+	0% {
+		transform: scale(1)
+	}
+	50% {
+		transform: scaleX(1) scaleY(0.005);
+	}
+	100% {
+		transform: scaleX(0) scaleY(0.005);
+	}
+}
+
+:fullscreen .ControlButton[b-z3yulwf02w]{
+    margin-top:-5%;    
+}
