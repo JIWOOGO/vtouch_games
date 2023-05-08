@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5kBhgR9iL3IEJKdaidofEy6kbGyHm95xQB9jA08Ck7I=",
+  "Hash": "GzPEex5VPpZjnZsJdVNWHEQ/fTqVYBFfaTOC/1Q9vDo=",
   "Source": "vtouch_games",
   "BasePath": "_content/vtouch_games",
   "Mode": "Default",
@@ -355,6 +355,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/fonts/LineIcons.woff2"
+    },
+    {
+      "Identity": "/home/oem/Work/Code/vtouch_games/wwwroot/images/china.png",
+      "SourceId": "vtouch_games",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/oem/Work/Code/vtouch_games/wwwroot/",
+      "BasePath": "_content/vtouch_games",
+      "RelativePath": "images/china.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/china.png"
     },
     {
       "Identity": "/home/oem/Work/Code/vtouch_games/wwwroot/images/dots.shape.svg",
@@ -865,6 +882,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/main.gif"
+    },
+    {
+      "Identity": "/home/oem/Work/Code/vtouch_games/wwwroot/images/usa.png",
+      "SourceId": "vtouch_games",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/oem/Work/Code/vtouch_games/wwwroot/",
+      "BasePath": "_content/vtouch_games",
+      "RelativePath": "images/usa.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/usa.png"
     },
     {
       "Identity": "/home/oem/Work/Code/vtouch_games/wwwroot/images/videos/mp4/automotive/1.mp4",

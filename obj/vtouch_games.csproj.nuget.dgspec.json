@@ -37,6 +37,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Localization": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -56,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.405/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.408/RuntimeIdentifierGraph.json"
         }
       }
     }

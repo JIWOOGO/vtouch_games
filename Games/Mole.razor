@@ -1,6 +1,6 @@
 @page "/games/mole"
 @inject IJSRuntime JS
-
+@inject LocalizationService localizationService;
 
 <section class="test-section pb-150">
     <div class="container">
@@ -9,17 +9,56 @@
                 <div id="div_mole" class="mole-main mole-body">
                     <div class="row">
                         <div class="col-6">                            
-                            <h2 class="text-start" style="margin-left:20px;">WHAC A MOLE</h2>
+                            <h2 class="text-start" style="margin-left:20px;">
+                                @{
+                                    string whacamole = "";
+                                    if(localizationService.language == "zh-CN" )
+                                    {
+                                        whacamole = "拿痣!";
+                                    }
+                                    else
+                                    {
+                                        whacamole = "WHAC A MOLE";
+                                    }
+                                }
+                                @whacamole                            
+                            </h2>
                         </div>
                         <div class="col-6">
-                            <h2 class="score text-end" style="margin-right:20px;">SCORE : 0</h2>
+                            <h2 class="score text-end" style="margin-right:20px;">
+                                @{
+                                    string score = "";
+                                    if(localizationService.language == "zh-CN" )
+                                    {
+                                        score = "點數";
+                                    }
+                                    else
+                                    {
+                                        score = "SCORE";
+                                    }
+                                }
+                                @(score) : 0
+                            </h2>
                         </div>
                     </div>
                     
                     
                     <div class="w-100 text-center;" style="display:flex; justify-content:center;">                        
                         <div class="start" @onclick="OnClickStart">
-                            <button class="theme-btn">Start!</button>
+                            <button class="theme-btn">
+                                @{
+                                    string start = "";
+                                    if(localizationService.language == "zh-CN" )
+                                    {
+                                        start = "开始!";
+                                    }
+                                    else
+                                    {
+                                        start = "Start!";
+                                    }
+                                }
+                                @start
+                            </button>
                         </div>                        
                     </div>
                     <div class="game">
@@ -52,7 +91,20 @@
                         </div>                        
                     </div>      
                     <div class="div_fullscreen" @onclick="OnClickFullScreen">
-                        <button id="button_fullscreen" class="btn" style="width:150px; height:50px; font-size:20px; background-color: rgba(0, 0, 0, 0.5); color:white;">FullScreen</button>
+                        <button id="button_fullscreen" class="btn" style="width:150px; height:50px; font-size:20px; background-color: rgba(0, 0, 0, 0.5); color:white;">
+                            @{
+                                string fscreen = "";
+                                if(localizationService.language == "zh-CN" )
+                                {
+                                    fscreen = "全屏";
+                                }
+                                else
+                                {
+                                    fscreen = "Full Screen";
+                                }
+                            }
+                            @fscreen
+                        </button>
                     </div>                                
                 </div>                
             </div>
@@ -69,7 +121,12 @@
         if (firstRender)
         {            
             module = await JS.InvokeAsync<IJSObjectReference>("import", "./js/games/mole.js");               
-            IsFullScreen = false;             
+            IsFullScreen = false;          
+
+            if (module != null)
+            {      
+                await module.InvokeVoidAsync("SendLanguage", localizationService.language);
+            }        
         }
     }
 
@@ -84,17 +141,30 @@
 
     private async Task OnClickFullScreen()
     {
+        string fullscreen = "";
+        string close = "";
+        if(localizationService.language == "zh-CN" )
+        {
+            fullscreen = "全屏";
+            close = "关闭";
+        }
+        else
+        {
+            fullscreen = "Full Screen";
+            close = "Close";
+        }
+
         if (JS != null)
         {      
             if(!IsFullScreen)
             {
                 IsFullScreen = true;
-                await JS.InvokeVoidAsync("openFullscreen", "div_mole");
+                await JS.InvokeVoidAsync("openFullscreen", "div_mole", close);
             }
             else
             {
                 IsFullScreen = false;
-                await JS.InvokeVoidAsync("closeFullscreen");
+                await JS.InvokeVoidAsync("closeFullscreen", fullscreen);
             }
         }           
     }

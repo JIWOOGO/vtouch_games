@@ -4,6 +4,11 @@ const moles = document.querySelectorAll('.mole');
 let lastHole;
 let timeUp = false;
 let score = 0;
+let language = "";
+
+export function SendLanguage(lang){
+    language = lang;
+}
 
 function randomTime(min, max) { 
     return Math.round(Math.random() * (max - min) + min);
@@ -29,8 +34,16 @@ function randomHole(holes) {
     }, time);
 }
 
-export function startGame() {
-    scoreBoard.textContent = "SCORE : " + 0;
+export function startGame() {    
+    if(language == "zh-CN")
+    {
+        scoreBoard.textContent = "點數 : " + 0;
+    }
+    else
+    {
+        scoreBoard.textContent = "SCORE : " + 0;
+    }    
+    
     timeUp = false;
     score = 0;
     peep();
@@ -44,7 +57,16 @@ function whack(e) {
     //var audio = document.getElementById(audio_id);    
     audio.play();
     this.parentNode.classList.remove('up');
-    scoreBoard.textContent = "SCORE : " + score;
+
+    if(language == "zh-CN")
+    {        
+        scoreBoard.textContent = "點數 : " + score;
+    }
+    else
+    {
+        scoreBoard.textContent = "SCORE : " + score;
+    }
+    
 }
 
 moles.forEach(mole => mole.addEventListener('mouseover', whack));

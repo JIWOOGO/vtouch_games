@@ -1,12 +1,16 @@
+using System.Globalization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-
+using Microsoft.AspNetCore.Localization;
+using vtouch_games;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+builder.Services.AddSingleton<LocalizationService>();
+
 
 var app = builder.Build();
 
@@ -18,7 +22,14 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-//app.UseHttpsRedirection();
+var supportedCultures = new[] { "en-US", "zn-CN" };
+var localizationOptions = new RequestLocalizationOptions()
+    .SetDefaultCulture(supportedCultures[1])
+    .AddSupportedCultures(supportedCultures)
+    .AddSupportedUICultures(supportedCultures);
+
+app.UseRequestLocalization(localizationOptions);
+
 
 app.UseStaticFiles();
 

@@ -15,9 +15,9 @@
 })();
 
 
-function openFullscreen(elemId) {
+function openFullscreen(elemId, language) {
 	var button = document.getElementById("button_fullscreen");	
-	button.innerHTML = "Close";	
+	button.innerHTML = language;	
     var elem = document.getElementById(elemId);
     if (elem.requestFullscreen) {
       elem.requestFullscreen();
@@ -29,9 +29,9 @@ function openFullscreen(elemId) {
 }
 
 /* Close fullscreen */
-function closeFullscreen() {	
+function closeFullscreen(language) {	
 	var button = document.getElementById("button_fullscreen");
-	button.innerHTML = "FullScreen";
+	button.innerHTML = language;
 
 	if (document.exitFullscreen) {
 	  document.exitFullscreen();
@@ -41,3 +41,9 @@ function closeFullscreen() {
 	  document.msExitFullscreen();
 	}
 }
+
+function setCurrentCulture(cultureName) {
+    document.cookie = "BlazorCulture=" + cultureName + ";path=/";
+    location.reload();
+}
+

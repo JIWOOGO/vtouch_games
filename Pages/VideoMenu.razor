@@ -1,5 +1,6 @@
 @page "/videos"
 @inject IJSRuntime JS
+@inject LocalizationService localizationService;
 
 <section class="video-section" style="margin-left:90px;" tabindex="0" @onkeydown="HandleKeyDown">
     <div class="container">
@@ -21,7 +22,20 @@
                                     <div class="row align-items-center">
                                         <div class="col-12">
                                             <div id="carouselPanelControls" class="carousel" data-bs-ride="carousel">
-                                                <div class="w-100 text-start" style="font-size:25px;">Panel</div>
+                                                <div class="w-100 text-start" style="font-size:25px;">
+                                                    @{
+                                                        string panel = "";
+                                                        if(localizationService.language == "zh-CN" )
+                                                        {
+                                                            panel = "镶片";
+                                                        }
+                                                        else
+                                                        {
+                                                            panel = "Panel";
+                                                        }
+                                                    }
+                                                    @panel
+                                                </div>
                                                 <div class="carousel-inner">
                                                     @for(int i = 1; i <= 13; i++)
                                                     {
@@ -52,7 +66,20 @@
                                     <div class="row align-items-center">
                                         <div class="col-12">
                                             <div id="carouselAutomotiveControls" class="carousel" data-bs-ride="carousel">
-                                                <div class="w-100 text-start" style="font-size:25px;">Automotive</div>
+                                                <div class="w-100 text-start" style="font-size:25px;">
+                                                    @{
+                                                        string automotive = "";
+                                                        if(localizationService.language == "zh-CN" )
+                                                        {
+                                                            automotive = "自動車";
+                                                        }
+                                                        else
+                                                        {
+                                                            automotive = "Automotive";
+                                                        }
+                                                    }
+                                                    @automotive
+                                                </div>
                                                 <div class="carousel-inner">
                                                     @for(int i = 1; i <= 7; i++)
                                                     {
@@ -81,7 +108,20 @@
                                     <div class="row align-items-center">
                                         <div class="col-12">
                                             <div id="carouselHomeControls" class="carousel" data-bs-ride="carousel">
-                                                <div class="w-100 text-start" style="font-size:25px;">Home</div>
+                                                <div class="w-100 text-start" style="font-size:25px;">
+                                                    @{
+                                                        string home = "";
+                                                        if(localizationService.language == "zh-CN" )
+                                                        {
+                                                            home = "家";
+                                                        }
+                                                        else
+                                                        {
+                                                            home = "Home";
+                                                        }
+                                                    }
+                                                    @home
+                                                </div>
                                                 <div class="carousel-inner">
                                                     @for(int i = 1; i <= 7; i++)
                                                     {
@@ -157,7 +197,20 @@
                                                 </div>
                                             </div>        
                                             <div style="position:absolute; margin-top:-130px; width:300px; height:200px;left:50%; margin-left:-150px; display:flex; align-items:center; justify-content:center; z-index:100;" @onclick="OnClickFullScreen">
-                                                <button id="button_fullscreen" class="btn ControlButton" style="width:150px; height:50px; font-size:20px; background-color: rgba(0, 0, 0, 0.5); color:white;">FullScreen</button>
+                                                <button id="button_fullscreen" class="btn ControlButton" style="width:150px; height:50px; font-size:20px; background-color: rgba(0, 0, 0, 0.5); color:white;">
+                                                    @{
+                                                        string fscreen = "";
+                                                        if(localizationService.language == "zh-CN" )
+                                                        {
+                                                            fscreen = "全屏";
+                                                        }
+                                                        else
+                                                        {
+                                                            fscreen = "Full Screen";
+                                                        }
+                                                    }
+                                                    @fscreen
+                                                </button>
                                             </div>                                                                        
                                         </div>
                                         
@@ -185,6 +238,7 @@
     private static int VideoType {get; set;}
 
     private bool IsFullScreen {get; set;}
+    
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {        
         if (firstRender)
@@ -199,17 +253,30 @@
 
     private async Task OnClickFullScreen()
     {
+        string fullscreen = "";
+        string close = "";
+        if(localizationService.language == "zh-CN" )
+        {
+            fullscreen = "全屏";
+            close = "关闭";
+        }
+        else
+        {
+            fullscreen = "Full Screen";
+            close = "Close";
+        }
+
         if (JS != null)
         {      
             if(!IsFullScreen)
             {
                 IsFullScreen = true;
-                await JS.InvokeVoidAsync("openFullscreen", "div_map");
+                await JS.InvokeVoidAsync("openFullscreen", "div_map", close);
             }
             else
             {
                 IsFullScreen = false;
-                await JS.InvokeVoidAsync("closeFullscreen");
+                await JS.InvokeVoidAsync("closeFullscreen", fullscreen);
             }
         }           
     }

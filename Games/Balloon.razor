@@ -1,5 +1,6 @@
 @page "/games/balloon"
 @inject IJSRuntime JS
+@inject LocalizationService localizationService;
 
 <section class="test-section">
     <div class="container">
@@ -9,12 +10,38 @@
                     <div id="div_balloon" style="height:100%">
                         <div class="w-100 text-center;" style="display:flex; justify-content:center;">                        
                                 <div id="div_start" class="start" @onclick="OnClickStart">
-                                    <button id="button_start" class="theme-btn">Start!</button>
+                                    <button id="button_start" class="theme-btn">
+                                        @{
+                                            string start = "";
+                                            if(localizationService.language == "zh-CN" )
+                                            {
+                                                start = "开始!";
+                                            }
+                                            else
+                                            {
+                                                start = "Start!";
+                                            }
+                                        }
+                                        @start
+                                    </button>
                                 </div>                        
                             </div>                    
                     </div>        
                     <div class="div_fullscreen" @onclick="OnClickFullScreen">
-                        <button id="button_fullscreen" class="btn ControlButton" style="width:150px; height:50px; font-size:20px; background-color: rgba(0, 0, 0, 0.5); color:white;">FullScreen</button>
+                        <button id="button_fullscreen" class="btn ControlButton" style="width:150px; height:50px; font-size:20px; background-color: rgba(0, 0, 0, 0.5); color:white;">
+                            @{
+                                string fscreen = "";
+                                if(localizationService.language == "zh-CN" )
+                                {
+                                    fscreen = "全屏";
+                                }
+                                else
+                                {
+                                    fscreen = "Full Screen";
+                                }
+                            }
+                            @fscreen
+                        </button>
                     </div>      
                 </div>
             </div>
@@ -46,17 +73,30 @@
 
     private async Task OnClickFullScreen()
     {
+        string fullscreen = "";
+        string close = "";
+        if(localizationService.language == "zh-CN" )
+        {
+            fullscreen = "全屏";
+            close = "关闭";
+        }
+        else
+        {
+            fullscreen = "Full Screen";
+            close = "Close";
+        }
+        
         if (JS != null)
         {      
             if(!IsFullScreen)
             {
                 IsFullScreen = true;
-                await JS.InvokeVoidAsync("openFullscreen", "div_map");
+                await JS.InvokeVoidAsync("openFullscreen", "div_map", close);
             }
             else
             {
                 IsFullScreen = false;
-                await JS.InvokeVoidAsync("closeFullscreen");
+                await JS.InvokeVoidAsync("closeFullscreen", fullscreen);
             }
         }           
     }

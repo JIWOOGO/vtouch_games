@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "fk8GElxX0//BISryk9S8Z4aqiAwUmgVaOVTPps/9JkIYivQzaFQcrTtLgr8gy+CqFwyjGSl996wFOsUIs9s3tQ==",
+  "dgSpecHash": "yu7qidSaRPPfe46pye3+6muMz7D9EMv8aQN0frbnNrgG7lLrbNOjZBgB0ZG7AeYK8k7aBaKeSi9VVWdrGziedA==",
   "success": true,
   "projectFilePath": "/home/oem/Work/Code/vtouch_games/vtouch_games.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/oem/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.extensions.localization/6.0.16/microsoft.extensions.localization.6.0.16.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.extensions.localization.abstractions/6.0.16/microsoft.extensions.localization.abstractions.6.0.16.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.3/microsoft.extensions.logging.abstractions.6.0.3.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/home/oem/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

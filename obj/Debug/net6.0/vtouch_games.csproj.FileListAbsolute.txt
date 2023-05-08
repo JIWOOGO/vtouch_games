@@ -91,3 +91,7 @@ C:/Users/vtouchinc/Desktop/vtouch_games/obj/Debug/net6.0/ref/vtouch_games.dll
 /home/oem/Work/Code/vtouch_games/obj/Debug/net6.0/vtouch_games.pdb
 /home/oem/Work/Code/vtouch_games/obj/Debug/net6.0/vtouch_games.genruntimeconfig.cache
 /home/oem/Work/Code/vtouch_games/obj/Debug/net6.0/ref/vtouch_games.dll
+/home/oem/Work/Code/vtouch_games/bin/Debug/net6.0/Microsoft.Extensions.Localization.dll
+/home/oem/Work/Code/vtouch_games/bin/Debug/net6.0/Microsoft.Extensions.Localization.Abstractions.dll
+/home/oem/Work/Code/vtouch_games/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
+/home/oem/Work/Code/vtouch_games/obj/Debug/net6.0/vtouch_games.csproj.CopyComplete
